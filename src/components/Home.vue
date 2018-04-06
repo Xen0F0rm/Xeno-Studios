@@ -1,10 +1,6 @@
 <template>
    <v-app light>
-    <v-toolbar class="white">
-      <v-toolbar-title v-text="title">Xeno-Studios</v-toolbar-title>
-    </v-toolbar>
     <main>
-      <v-content>
         <section>
           <v-parallax src="https://cdn.stocksnap.io/img-thumbs/960w/CDFFE6C72E.jpg">
             <v-layout
@@ -59,7 +55,7 @@
                         <div class="headline">Fast development</div>
                       </v-card-title>
                       <v-card-text>
-                        We also have knowledge of many frontend frameworks which speeds up the process of building your website. With tools such as Vuejs, React, AngularJS 4 and others at our disposal building your website to match your business needs will be no problem! 
+                        We also have knowledge of many frontend frameworks which speeds up the process of building your website. With tools such as Vuejs, React, AngularJS 5 and others at our disposal building your website to match your business needs will be no problem! 
                       </v-card-text>
                     </v-card>
                   </v-flex>
@@ -156,7 +152,6 @@
         </section>
 
         <xeno-footer />
-      </v-content>
     </main>
   </v-app>
 </template>
@@ -166,11 +161,6 @@ import Footer from '@/components/Footer'
 
 export default {
   name: 'Home',
-  data () {
-    return {
-      title: 'Xeno-Studios'
-    }
-  },
   components: {
     'xeno-footer': Footer
   }
@@ -179,5 +169,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+  main {
+    width: 100vw;
+  }
 </style>
